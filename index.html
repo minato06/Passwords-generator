@@ -1,0 +1,50 @@
+<html>
+<head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <main>
+        <div class="head">
+            <h1><span class='white'>Generate a</span><br>random password</h1>
+            <p class='white'>Never use an insecure password again.</p>
+        </div>
+            <div class="password-option">
+                <div class="check-option">
+
+                    <input id="input-number" type="number" placeholder="Length">
+                    <button onclick="getRandomPassword()" type="submit">Generate Passwords</button>
+                </div>
+                <div class="check-option">
+                    <div class="toggle-symbols">
+                        <h4 class="check-title">Symbols</h4>
+                        <label class="switch">
+
+                            <input type="checkbox" id="check-Symbols">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <div class="toggle-number">
+                        <h4 class="check-title">Numbers</h4>
+                        <label class="switch">
+
+                            <input type="checkbox" id="check-Numbers">
+                            <span class="slider round"></span>
+
+                        </label>
+                    </div>
+                </div>
+
+            </div>
+
+        <div class="password">
+            <div id="container-password-1">
+                <h6 id="password-1" onclick="copyPassword1()"></h6>
+            </div>
+            <div id="container-password-2">
+                <h6 id="password-2" onclick="copyPassword2()" ></h6>
+            </div>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
